@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommercePro.MainPage"
+             xmlns:models="clr-namespace:CommercePro.Models"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
+                <Button Grid.Column="1" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
+                <Button Grid.Column="2" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
