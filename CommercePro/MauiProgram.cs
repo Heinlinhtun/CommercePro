@@ -13,7 +13,7 @@ namespace CommercePro
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("fa-regular-400.ttf", "FaBrands");
+                    fonts.AddFont("fa-regular-400.ttf", "FaRegular");
                 });
 
 #if DEBUG

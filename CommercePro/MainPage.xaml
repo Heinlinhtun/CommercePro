@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommercePro.MainPage"
+             Shell.NavBarHasShadow="True"
              xmlns:models="clr-namespace:CommercePro.Models"
              BackgroundColor="White">
 
-    <ScrollView>
+    <ScrollView Background="#FCFCFC">
+        
         <VerticalStackLayout Padding="15">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -13,9 +15,29 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
-                <Button Grid.Column="1" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
-                <Button Grid.Column="2" WidthRequest="100" HeightRequest="100" BackgroundColor="White"  Text="Sale" TextColor="#043B87"/>
+                <Button Grid.Column="0" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="1" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="2" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="1" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="2" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="1" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
+                <Button Grid.Column="2" WidthRequest="100" HeightRequest="100" Style="{StaticResource HomeButtonStyle}"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>

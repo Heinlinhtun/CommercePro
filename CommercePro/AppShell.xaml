@@ -8,6 +8,7 @@
     Shell.FlyoutBehavior="Flyout"
     Shell.NavBarIsVisible="True"
     Shell.NavBarHasShadow ="True"
+    
     Shell.ForegroundColor="#043B87"
     Shell.TitleColor="{DynamicResource Primary}"
     Title="CommercePro"
@@ -15,9 +16,10 @@
     >
 
     <ShellContent
+        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <Shell.TitleView>
+    <Shell.TitleView >
         <Grid ColumnDefinitions="5*,1*" >
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Image Source="Resources/Images/logo.png" WidthRequest="30" Margin="10"/>
@@ -26,7 +28,7 @@
                     <Label Text="In your hand" FontSize="8" VerticalOptions="Center" HorizontalOptions="End" TextColor="{DynamicResource Primary}" />
                 </VerticalStackLayout>
             </HorizontalStackLayout>
-            <Button Grid.Column="1" Text="{x:Static models:FaBrandIcons. }"/>
+            <Button Grid.Column="1" BackgroundColor="White" Text="{x:Static models:FaRegular.Bell}" TextColor="{StaticResource Primary}" FontFamily="FaRegular" FontSize="Large"/>
         </Grid>
     </Shell.TitleView>
    

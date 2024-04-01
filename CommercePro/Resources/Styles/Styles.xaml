@@ -3,13 +3,21 @@
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    <Shadow x:Key="ButtonShadow" Brush="Gray" Offset="2,2" Radius="10" Opacity="0.3" />
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
 
-    <Style TargetType="Label">
-        <Setter Property="FontFamily" Value="FaBrands"/>
+    <Style x:Key="iconFont" TargetType="Button">
+        <Setter Property="FontFamily" Value="FaRegular"/>
+    </Style>
+    <Style x:Key="HomeButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White"/>        
+        <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Poppins-Medium"/>
+        <Setter Property="Shadow" Value="{StaticResource ButtonShadow}"/>
     </Style>
 
     <Style TargetType="IndicatorView">
