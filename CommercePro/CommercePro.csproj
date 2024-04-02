@@ -58,13 +58,29 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\fa-regular-400.ttf" />
+	  <None Remove="Resources\Images\customers.png" />
+	  <None Remove="Resources\Images\dashboard.png" />
+	  <None Remove="Resources\Images\files.png" />
+	  <None Remove="Resources\Images\invoices.png" />
 	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\parcel.png" />
+	  <None Remove="Resources\Images\products.png" />
+	  <None Remove="Resources\Images\purchase.png" />
+	  <None Remove="Resources\Images\sale.png" />
+	  <None Remove="Resources\Images\setting.png" />
+	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="TestPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
