@@ -5,66 +5,134 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CommercePro"
     xmlns:models="clr-namespace:CommercePro.Models"
+    Title="CommercePro"
+    IconImageSource="Resources/Images/logo.png"
     Shell.FlyoutBehavior="Flyout"
+    Shell.ForegroundColor="#043B87"
+    Shell.NavBarHasShadow="True"
     Shell.NavBarIsVisible="True"
-    Shell.NavBarHasShadow ="True"
-    Shell.TabBarIsVisible="True"
     Shell.TabBarBackgroundColor="{StaticResource Primary}"
     Shell.TabBarForegroundColor="White"
+    Shell.TabBarIsVisible="True"
     Shell.TabBarTitleColor="White"
     Shell.TabBarUnselectedColor="{StaticResource Secondary}"
-    Shell.ForegroundColor="#043B87"
-    Shell.TitleColor="{DynamicResource Primary}"
-    Title="CommercePro"
-    IconImageSource="Resources/Images/logo.png">
-    
-    <Shell.TitleView >
-        <Grid ColumnDefinitions="5*,1*" >
+    Shell.TitleColor="{DynamicResource Primary}">
+
+    <Shell.TitleView>
+        <Grid ColumnDefinitions="5*,1*">
             <HorizontalStackLayout HorizontalOptions="Center">
-                <Image Source="Resources/Images/logo.png" WidthRequest="30" Margin="10"/>
-                <VerticalStackLayout Margin="0,10" >
-                    <Label Text="Commerce Pro" FontSize="Header" VerticalOptions="Center" FontAttributes="Bold" />
-                    <Label Text="In your hand" FontSize="10" VerticalOptions="Center" HorizontalOptions="End" TextColor="{DynamicResource Primary}" />
+                <Image
+                    Margin="10"
+                    Source="Resources/Images/logo.png"
+                    WidthRequest="30" />
+                <VerticalStackLayout Margin="0,10">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Header"
+                        Text="Commerce Pro"
+                        VerticalOptions="Center" />
+                    <Label
+                        FontSize="10"
+                        HorizontalOptions="End"
+                        Text="In your hand"
+                        TextColor="{DynamicResource Primary}"
+                        VerticalOptions="Center" />
                 </VerticalStackLayout>
             </HorizontalStackLayout>
-            <Button Grid.Column="1" BackgroundColor="White" Text="{x:Static models:FaRegular.Bell}" TextColor="{StaticResource Primary}" FontFamily="FaRegular" FontSize="Large"/>
+            <Button
+                Grid.Column="1"
+                BackgroundColor="White"
+                FontFamily="FaRegular"
+                FontSize="Large"
+                Text="{x:Static models:FaRegular.Bell}"
+                TextColor="{StaticResource Primary}" />
         </Grid>
     </Shell.TitleView>
-    
-    
 
-    <Shell.FlyoutHeader >
+
+
+    <Shell.FlyoutHeader>
         <VerticalStackLayout>
-            <Image Source="Resources/Images/logo.png" WidthRequest="100"/>
-            <Label Text="Commerce Pro" FontSize="Header" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="Center" />
-            <Label Text="In your hand" FontSize="10" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{DynamicResource Primary}" />
+            <Image Source="Resources/Images/logo.png" WidthRequest="100" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="Header"
+                HorizontalOptions="Center"
+                Text="Commerce Pro"
+                VerticalOptions="Center" />
+            <Label
+                FontSize="10"
+                HorizontalOptions="Center"
+                Text="In your hand"
+                TextColor="{DynamicResource Primary}"
+                VerticalOptions="Center" />
         </VerticalStackLayout>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Home" Icon="Resources/Images/dashboard.png">
-        
+    <FlyoutItem
+        Title="Home"
+        FlyoutDisplayOptions="AsSingleItem"
+        Icon="Resources/Images/dashboard.png">
+
         <Tab Title="Home" Icon="Resources/Images/dashboard.png">
-            <ShellContent 
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage"
-    Icon="Resources/Images/setting.png"/>
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/setting.png"
+                Route="MainPage" />
 
         </Tab>
         <Tab Title="Sale" Icon="Resources/Images/sale.png">
-            <ShellContent 
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage"
-    Icon="Resources/Images/sale.png"/>
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/sale.png"
+                Route="MainPage" />
         </Tab>
-        <Tab Title="Settings" Icon="Resources/Images/setting.png">
-            <ShellContent 
- ContentTemplate="{DataTemplate local:MainPage}"
- Route="MainPage"
- Icon="Resources/Images/sale.png"/>
+        <Tab Title="Invoice" Icon="Resources/Images/invoices.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:TestPage}"
+                Icon="Resources/Images/sale.png"
+                Route="TestPage" />
+        </Tab>
+        <Tab Title="User" Icon="Resources/Images/user.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/sale.png"
+                Route="MainPage" />
         </Tab>
     </FlyoutItem>
 
-    
+    <FlyoutItem
+        Title="Product"
+        FlyoutDisplayOptions="AsSingleItem"
+        Icon="Resources/Images/products.png">
+        <Tab Title="Products" Icon="Resources/Images/Products.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:ProductPage}"
+                Icon="Resources/Images/Products.png"
+                Route="Products" />
+        </Tab>
+
+        <Tab Title="Purchase" Icon="Resources/Images/purchase.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/setting.png"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Category" Icon="Resources/Images/category.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/setting.png"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Unit" Icon="Resources/Images/unit.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="Resources/Images/setting.png"
+                Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+
+
 
 
 
