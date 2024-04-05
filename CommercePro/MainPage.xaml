@@ -3,12 +3,13 @@
     x:Class="CommercePro.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CommercePro"
     xmlns:models="clr-namespace:CommercePro.Models"
     BackgroundColor="White"
     Shell.NavBarHasShadow="True">
 
     <ScrollView Background="#FCFCFC">
-
+        <!--  Buttons  -->
         <VerticalStackLayout Padding="15">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -20,23 +21,31 @@
                     x:Name="BtnProduct"
                     Grid.Column="0"
                     Padding="0,25,0,0"
+                    Clicked="BtnProduct_Clicked"
                     ContentLayout="Top,5"
                     HeightRequest="100"
                     ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
                     Text="Products"
-                    WidthRequest="100" 
-                    Clicked="BtnProduct_Clicked"/>
+                    WidthRequest="100" />
 
                 <Button
                     Grid.Column="1"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
                 <Button
                     Grid.Column="2"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
             </Grid>
             <Grid>
@@ -47,18 +56,30 @@
                 </Grid.ColumnDefinitions>
                 <Button
                     Grid.Column="0"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
                 <Button
                     Grid.Column="1"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
                 <Button
                     Grid.Column="2"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
             </Grid>
             <Grid>
@@ -69,22 +90,63 @@
                 </Grid.ColumnDefinitions>
                 <Button
                     Grid.Column="0"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
                 <Button
                     Grid.Column="1"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
                 <Button
                     Grid.Column="2"
+                    Padding="0,25,0,0"
+                    ContentLayout="Top,5"
                     HeightRequest="100"
+                    ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
+                    Text="Products"
                     WidthRequest="100" />
             </Grid>
 
+            <ScrollView
+                Margin="10"
+                HorizontalScrollBarVisibility="Never"
+                Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Frame
+                        Margin="0,0,10,0"
+                        BackgroundColor="{StaticResource Primary}"
+                        HeightRequest="150"
+                        WidthRequest="250" />
+                    <Frame
+                        Margin="0,0,10,0"
+                        BackgroundColor="{StaticResource Primary}"
+                        HeightRequest="150"
+                        WidthRequest="250" />
+                </HorizontalStackLayout>
+            </ScrollView>
+            <Grid ColumnDefinitions="1*,1*">
+                <Button
+                    Grid.Column="0"
+                    HeightRequest="110"
+                    Style="{StaticResource HomeButtonStyle}" />
+                <Button
+                    Grid.Column="1"
+                    HeightRequest="110"
+                    Style="{StaticResource HomeButtonStyle}" />
+            </Grid>
         </VerticalStackLayout>
+
+
     </ScrollView>
 
 </ContentPage>
