@@ -81,7 +81,7 @@
                 Route="MainPage" />
 
         </Tab>
-        <Tab Title="Sale" Icon="Resources/Images/sale.png">
+        <Tab Title="Sale" Icon="Resources/Images/sales.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Icon="Resources/Images/sale.png"
@@ -93,7 +93,7 @@
                 Icon="Resources/Images/sale.png"
                 Route="TestPage" />
         </Tab>
-        <Tab Title="User" Icon="Resources/Images/user.png">
+        <Tab Title="User" Icon="Resources/Images/users.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Icon="Resources/Images/sale.png"
@@ -112,7 +112,7 @@
                 Route="Products" />
         </Tab>
 
-        <Tab Title="Purchase" Icon="Resources/Images/purchase.png">
+        <Tab Title="Purchase" Icon="Resources/Images/cart.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Icon="Resources/Images/setting.png"
@@ -124,7 +124,7 @@
                 Icon="Resources/Images/setting.png"
                 Route="MainPage" />
         </Tab>
-        <Tab Title="Unit" Icon="Resources/Images/unit.png">
+        <Tab Title="Unit" Icon="Resources/Images/units.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Icon="Resources/Images/setting.png"

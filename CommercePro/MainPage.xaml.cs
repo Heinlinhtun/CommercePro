@@ -15,7 +15,7 @@ namespace CommercePro
 
         private void BtnProduct_Clicked(object sender, EventArgs e)
         {
-            //NavigatedToProduct();
+            NavigatedToProduct();
         }
 
         private async Task NavigatedToProduct()

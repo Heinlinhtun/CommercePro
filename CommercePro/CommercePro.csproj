@@ -58,19 +58,19 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\fa-regular-400.ttf" />
+	  <None Remove="Resources\Images\cart.png" />
 	  <None Remove="Resources\Images\category.png" />
 	  <None Remove="Resources\Images\customers.png" />
 	  <None Remove="Resources\Images\dashboard.png" />
-	  <None Remove="Resources\Images\files.png" />
 	  <None Remove="Resources\Images\invoices.png" />
 	  <None Remove="Resources\Images\logo.png" />
-	  <None Remove="Resources\Images\parcel.png" />
 	  <None Remove="Resources\Images\products.png" />
-	  <None Remove="Resources\Images\purchase.png" />
-	  <None Remove="Resources\Images\sale.png" />
-	  <None Remove="Resources\Images\setting.png" />
-	  <None Remove="Resources\Images\unit.png" />
-	  <None Remove="Resources\Images\user.png" />
+	  <None Remove="Resources\Images\reports.png" />
+	  <None Remove="Resources\Images\sales.png" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\suppliers.png" />
+	  <None Remove="Resources\Images\units.png" />
+	  <None Remove="Resources\Images\users.png" />
 	</ItemGroup>
 
 	<ItemGroup>

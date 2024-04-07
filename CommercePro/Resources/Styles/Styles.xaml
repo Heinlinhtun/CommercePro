@@ -16,9 +16,11 @@
     </Style>
     <Style x:Key="HomeButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="White" />
-        <Setter Property="TextColor" Value="{StaticResource Primary}" />
+        <Setter Property="TextColor" Value="{StaticResource Gray400}" />
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="Margin" Value="10" />
+        <Setter Property="WidthRequest" Value="100"/>
+        <Setter Property="HeightRequest" Value="100"/>
         <Setter Property="FontFamily" Value="Poppins-Medium" />
         <Setter Property="Shadow" Value="{StaticResource ButtonShadow}" />
     </Style>
