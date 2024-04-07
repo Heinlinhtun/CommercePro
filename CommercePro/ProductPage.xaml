@@ -4,10 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="ProductPage">
-    <VerticalStackLayout>
-        <Label
-            HorizontalOptions="Center"
-            Text="This is Product Page!"
-            VerticalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Button
+        x:Name="BtnAddProduct"
+        Margin="10"
+        Padding="0"
+        CornerRadius="30"
+        FontSize="30"
+        HeightRequest="50"
+        HorizontalOptions="End"
+        Shadow="{StaticResource ButtonShadow}"
+        Text="+"
+        Clicked="BtnAddProduct_Clicked"
+        VerticalOptions="End"
+        WidthRequest="50" />
+
+
 </ContentPage>

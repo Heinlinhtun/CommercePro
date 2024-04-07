@@ -21,10 +21,10 @@ namespace CommercePro
         private async Task NavigatedToProduct()
         {
             await Navigation.PushAsync(new ProductPage());
-            
+
         }
 
-      
+
     }
 
 }

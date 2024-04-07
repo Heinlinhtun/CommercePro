@@ -5,50 +5,54 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CommercePro"
     xmlns:models="clr-namespace:CommercePro.Models"
+    xmlns:systems="clr-namespace:Windows.System.Display;assembly=Microsoft.Windows.SDK.NET"
     BackgroundColor="White"
     Shell.NavBarHasShadow="True">
 
     <ScrollView Background="#FCFCFC">
         <!--  Buttons  -->
         <VerticalStackLayout Padding="15">
+            <BoxView
+                x:Name="PsudoShadow"
+                Margin="0,-10,0,10"
+                BackgroundColor="LightGray"
+                HeightRequest="1" />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
+
                 <Button
-                    x:Name="BtnProduct"
+                    x:Name="BtnProduct"                    
                     Grid.Column="0"
-                    Padding="0,25,0,0"
+                    Margin="0,10,5,10"
+                    Padding="0,25,0,10"
                     Clicked="BtnProduct_Clicked"
-                    ContentLayout="Top,5"
-                    HeightRequest="100"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/products.png"
                     Style="{StaticResource HomeButtonStyle}"
-                    Text="Products"
-                    WidthRequest="100" />
+                    Text="Products" />
 
                 <Button
                     x:Name="BtnSale"
                     Grid.Column="1"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
-                    HeightRequest="100"
+                    Margin="5,10,5,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/sales.png"
                     Style="{StaticResource HomeButtonStyle}"
-                    Text="Sale"
-                    WidthRequest="100" />
+                    Text="Sale" />
                 <Button
                     x:Name="BtnInvoice"
                     Grid.Column="2"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
-                    HeightRequest="100"
+                    Margin="5,10,0,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/invoices.png"
                     Style="{StaticResource HomeButtonStyle}"
-                    Text="Invoices"
-                    WidthRequest="100" />
+                    Text="Invoices" />
             </Grid>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -58,22 +62,25 @@
                 </Grid.ColumnDefinitions>
                 <Button
                     Grid.Column="0"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
+                    Margin="0,0,5,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/suppliers.png"
                     Style="{StaticResource HomeButtonStyle}"
                     Text="Suppliers" />
                 <Button
                     Grid.Column="1"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
+                    Margin="5,0,5,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/customers.png"
                     Style="{StaticResource HomeButtonStyle}"
                     Text="Customers" />
                 <Button
                     Grid.Column="2"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
+                    Margin="5,0,0,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/users.png"
                     Style="{StaticResource HomeButtonStyle}"
                     Text="Users" />
@@ -86,31 +93,50 @@
                 </Grid.ColumnDefinitions>
                 <Button
                     Grid.Column="0"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
-                    ImageSource="Resource/Images/settings.png"
+                    Margin="0,0,5,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
+                    ImageSource="Resource/Images/units.png"
                     Style="{StaticResource HomeButtonStyle}"
-                    Text="Settings" />
+                    Text="Units" />
                 <Button
                     Grid.Column="1"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
+                    Margin="5,0,5,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
                     ImageSource="Resource/Images/reports.png"
                     Style="{StaticResource HomeButtonStyle}"
                     Text="Reports" />
                 <Button
                     Grid.Column="2"
-                    Padding="0,25,0,0"
-                    ContentLayout="Top,5"
-                    ImageSource="Resource/Images/units.png"
+                     Margin="5,0,0,10"
+                    Padding="0,25,0,10"
+                    ContentLayout="Top,10"
+                    ImageSource="Resource/Images/settings.png"
                     Style="{StaticResource HomeButtonStyle}"
-                    Text="Units" />
+                    Text="Settings" />
             </Grid>
             <ScrollView
-                Margin="10,0,0,10"
+                Margin="0,10"
                 HorizontalScrollBarVisibility="Never"
                 Orientation="Horizontal">
-                <HorizontalStackLayout>
+                <HorizontalStackLayout FlowDirection="MatchParent">
+                    <Frame
+                        Margin="0,0,10,0"
+                        BorderColor="LightGray"
+                        CornerRadius="12"
+                        HasShadow="True"
+                        HeightRequest="120"
+                        WidthRequest="250">
+                        <Frame.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Offset="0.5" Color="{StaticResource Primary}" />
+                                <GradientStop Offset="1.0" Color="#DFF5FF" />
+                                <GradientStop Offset="0.75" Color="#50C4ED" />
+
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                    </Frame>
                     <Frame
                         Margin="0,0,10,0"
                         BorderColor="LightGray"
@@ -149,36 +175,32 @@
             <Grid ColumnDefinitions="1*,1*">
                 <Button
                     Grid.Column="0"
-                    Margin="0,0,0,10"
-                    BackgroundColor="#FFEBB2"
+                    Margin="0,0,10,10"
+                    BackgroundColor="#F8DE22"
                     HeightRequest="80"
-                    Style="{StaticResource HomeButtonStyle}"
-                    WidthRequest="160" />
+                    Style="{StaticResource HomeButtonStyle}" />
 
                 <Button
                     Grid.Column="1"
                     Margin="0,0,0,10"
                     BackgroundColor="#90D26D"
                     HeightRequest="80"
-                    Style="{StaticResource HomeButtonStyle}"
-                    WidthRequest="160" />
+                    Style="{StaticResource HomeButtonStyle}" />
             </Grid>
             <Grid ColumnDefinitions="1*,1*">
                 <Button
                     Grid.Column="0"
-                    Margin="0,0,0,10"
+                    Margin="0,0,10,10"
                     BackgroundColor="#EE4266"
                     HeightRequest="80"
-                    Style="{StaticResource HomeButtonStyle}"
-                    WidthRequest="160" />
+                    Style="{StaticResource HomeButtonStyle}" />
 
                 <Button
                     Grid.Column="1"
                     Margin="0,0,0,10"
                     BackgroundColor="#9F70FD"
                     HeightRequest="80"
-                    Style="{StaticResource HomeButtonStyle}"
-                    WidthRequest="160" />
+                    Style="{StaticResource HomeButtonStyle}" />
             </Grid>
         </VerticalStackLayout>
 
