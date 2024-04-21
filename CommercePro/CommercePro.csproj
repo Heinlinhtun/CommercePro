@@ -48,46 +48,47 @@
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\cart.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\category.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\customers.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\dashboard.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\invoices.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\logo.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\products.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\reports.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\sales.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\settings.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\suppliers.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 		<MauiImage Update="Resources\Images\units.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
+
 		<MauiImage Update="Resources\Images\users.png">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</MauiImage>
 
 		<!-- Custom Fonts -->
@@ -98,20 +99,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\fa-regular-400.ttf" />
-	  <None Remove="Resources\Images\cart.png" />
-	  <None Remove="Resources\Images\category.png" />
-	  <None Remove="Resources\Images\customers.png" />
-	  <None Remove="Resources\Images\dashboard.png" />
-	  <None Remove="Resources\Images\invoices.png" />
-	  <None Remove="Resources\Images\logo.png" />
-	  <None Remove="Resources\Images\products.png" />
-	  <None Remove="Resources\Images\reports.png" />
-	  <None Remove="Resources\Images\sales.png" />
-	  <None Remove="Resources\Images\settings.png" />
-	  <None Remove="Resources\Images\suppliers.png" />
-	  <None Remove="Resources\Images\units.png" />
-	  <None Remove="Resources\Images\users.png" />
+		<None Remove="Resources\Fonts\fa-regular-400.ttf" />
+		<None Remove="Resources\Images\cart.png" />
+		<None Remove="Resources\Images\category.png" />
+		<None Remove="Resources\Images\customers.png" />
+		<None Remove="Resources\Images\dashboard.png" />
+		<None Remove="Resources\Images\invoices.png" />
+		<None Remove="Resources\Images\logo.png" />
+		<None Remove="Resources\Images\products.png" />
+		<None Remove="Resources\Images\reports.png" />
+		<None Remove="Resources\Images\sales.png" />
+		<None Remove="Resources\Images\settings.png" />
+		<None Remove="Resources\Images\suppliers.png" />
+		<None Remove="Resources\Images\units.png" />
+		<None Remove="Resources\Images\users.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -121,12 +122,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ProductPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="TestPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="ProductPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="TestPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 </Project>

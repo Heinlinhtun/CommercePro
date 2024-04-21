@@ -5,18 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CommercePro"
     xmlns:models="clr-namespace:CommercePro.Models"
-    xmlns:systems="clr-namespace:Windows.System.Display;assembly=Microsoft.Windows.SDK.NET"
     BackgroundColor="White"
-    Shell.NavBarHasShadow="True">
+    Shell.NavBarHasShadow="True"
+    Shell.NavBarIsVisible="True">
 
     <ScrollView Background="#FCFCFC">
         <!--  Buttons  -->
         <VerticalStackLayout Padding="15">
-            <BoxView
-                x:Name="PsudoShadow"
-                Margin="0,-10,0,10"
-                BackgroundColor="LightGray"
-                HeightRequest="1" />
+
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -25,7 +21,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button
-                    x:Name="BtnProduct"                    
+                    x:Name="BtnProduct"
                     Grid.Column="0"
                     Margin="0,10,5,10"
                     Padding="0,25,0,10"
@@ -109,7 +105,7 @@
                     Text="Reports" />
                 <Button
                     Grid.Column="2"
-                     Margin="5,0,0,10"
+                    Margin="5,0,0,10"
                     Padding="0,25,0,10"
                     ContentLayout="Top,10"
                     ImageSource="Resource/Images/settings.png"
@@ -130,7 +126,7 @@
                         WidthRequest="250">
                         <Frame.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                <GradientStop Offset="0.5" Color="{StaticResource Primary}" />
+                                <GradientStop Offset="0.2" Color="{StaticResource Primary}" />
                                 <GradientStop Offset="1.0" Color="#DFF5FF" />
                                 <GradientStop Offset="0.75" Color="#50C4ED" />
 
@@ -146,7 +142,7 @@
                         WidthRequest="250">
                         <Frame.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                <GradientStop Offset="0.5" Color="{StaticResource Primary}" />
+                                <GradientStop Offset="0.2" Color="{StaticResource Primary}" />
                                 <GradientStop Offset="1.0" Color="#DFF5FF" />
                                 <GradientStop Offset="0.75" Color="#50C4ED" />
 
@@ -162,7 +158,7 @@
                         WidthRequest="250">
                         <Frame.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                <GradientStop Offset="0.5" Color="{StaticResource Primary}" />
+                                <GradientStop Offset="0.2" Color="{StaticResource Primary}" />
                                 <GradientStop Offset="1.0" Color="#DFF5FF" />
                                 <GradientStop Offset="0.75" Color="#50C4ED" />
 

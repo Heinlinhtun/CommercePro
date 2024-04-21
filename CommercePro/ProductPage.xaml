@@ -3,9 +3,10 @@
     x:Class="CommercePro.ProductPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ProductPage">
+    Title="ProductPage"
+    Padding="10">
 
-    <Button
+    <!--<Button
         x:Name="BtnAddProduct"
         Margin="10"
         Padding="0"
@@ -17,7 +18,45 @@
         Text="+"
         Clicked="BtnAddProduct_Clicked"
         VerticalOptions="End"
-        WidthRequest="50" />
+        WidthRequest="50" />-->
+
+
+    <Grid ColumnDefinitions="5*,1*">
+        <ScrollView Grid.Column="0" Grid.ColumnSpan="2">
+            <VerticalStackLayout>
+                <SearchBar Placeholder="Search" BackgroundColor="{StaticResource White}" />
+                <CollectionView>
+
+                </CollectionView>
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+
+
+        <!--  Floating Action Button with + Sign  -->
+        <AbsoluteLayout
+            Grid.ColumnSpan="2"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Button
+                AbsoluteLayout.LayoutBounds="1,1,60,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="{StaticResource Primary}"
+                CornerRadius="30"
+                FontSize="Large"
+                HeightRequest="60"
+                Shadow="{StaticResource ButtonShadow}"
+                Text="+"
+                TextColor="White"
+                WidthRequest="60" />
+
+        </AbsoluteLayout>
+
+    </Grid>
+
+
+
 
 
 </ContentPage>
