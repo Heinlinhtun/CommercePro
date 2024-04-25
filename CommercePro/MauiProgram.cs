@@ -15,9 +15,11 @@ namespace CommercePro
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("fa-regular-400.ttf", "FaRegular");
                 });
+            builder.Services.AddSingleton<LocalDbService>();
+            builder.Services.AddTransient<MainPage>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -24,10 +24,8 @@
     <Grid ColumnDefinitions="5*,1*">
         <ScrollView Grid.Column="0" Grid.ColumnSpan="2">
             <VerticalStackLayout>
-                <SearchBar Placeholder="Search" BackgroundColor="{StaticResource White}" />
-                <CollectionView>
-
-                </CollectionView>
+                <SearchBar BackgroundColor="{StaticResource White}" Placeholder="Search" />
+                <ListView x:Name=" ProductlistView" />
             </VerticalStackLayout>
 
         </ScrollView>
@@ -46,10 +44,17 @@
                 CornerRadius="30"
                 FontSize="Large"
                 HeightRequest="60"
-                Shadow="{StaticResource ButtonShadow}"
                 Text="+"
                 TextColor="White"
-                WidthRequest="60" />
+                WidthRequest="60">
+                <Button.Shadow>
+                    <Shadow
+                        Brush="Gray"
+                        Opacity="2"
+                        Radius="10"
+                        Offset="2,2" />
+                </Button.Shadow>
+            </Button>
 
         </AbsoluteLayout>
 

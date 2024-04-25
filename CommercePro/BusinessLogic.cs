@@ -29,6 +29,8 @@ namespace CommercePro
         [AutoIncrement]
         [Column("catid")]
         public int CategoryID { get; set; }
+        [Column("catName")]
+        public string? CategoryName { get; set; }
     }
 
 }
