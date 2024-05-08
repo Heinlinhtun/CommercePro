@@ -11,8 +11,6 @@ namespace CommercePro
         public int ProductID { get; set; }
         [Column("name")]
         public string? ProductName { get; set; }
-        [Column("model")]
-        public string? ProductModel { get; set; }
 
         [Column("catid")]
         public string? CategoryID { get; set; }

@@ -45,6 +45,7 @@
                 FontSize="Large"
                 HeightRequest="60"
                 Text="+"
+                Clicked="BtnAddProduct_Clicked"
                 TextColor="White"
                 WidthRequest="60">
                 <Button.Shadow>

@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using System.Windows.Input;
 
 namespace CommercePro;
@@ -17,7 +18,7 @@ public partial class ProductPage : ContentPage
 
     private void BtnAddProduct_Clicked(object sender, EventArgs e)
     {
-
+        this.ShowPopup(new AddProductPopup());
     }
 
 
