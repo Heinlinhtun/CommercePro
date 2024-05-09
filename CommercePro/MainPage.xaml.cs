@@ -22,8 +22,7 @@ namespace CommercePro
 
         private async Task NavigatedToProduct()
         {
-            await Navigation.PushAsync(new ProductPage(_dbService));
-
+            await Shell.Current.GoToAsync("Products");
         }
 
 

@@ -17,7 +17,6 @@
     Shell.TabBarTitleColor="White"
     Shell.TabBarUnselectedColor="{StaticResource Secondary}"
     Shell.TitleColor="{DynamicResource Primary}">
-
     <Shell.TitleView>
         <Grid ColumnDefinitions="5*,1*">
             <HorizontalStackLayout HorizontalOptions="Center">

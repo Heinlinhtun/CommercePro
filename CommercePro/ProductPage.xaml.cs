@@ -5,13 +5,13 @@ namespace CommercePro;
 
 public partial class ProductPage : ContentPage
 {
-    private readonly LocalDbService _dbService;
+    //private readonly LocalDbService _dbService;
 
-    public ProductPage(LocalDbService dbService)
+    public ProductPage()
     {
         InitializeComponent();
-        _dbService = dbService;
-        Task.Run(async () => ProductlistView.ItemsSource = await _dbService.GetProducts());
+        LocalDbService localDbService = new LocalDbService();
+        Task.Run(async () => ProductlistView.ItemsSource = await localDbService.GetProducts());
     }
 
 
